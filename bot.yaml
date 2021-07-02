@@ -6,6 +6,9 @@ config:
   presence:
     type: watching
     text: discord bots made in yaml
+  allowedMentions:
+    - "users"
+    - "replied_user"
 
 events:
   - name: on_ready
@@ -15,4 +18,18 @@ events:
 
 commands:
   - name: hi
-    reply: Hi!!
+    aliases:
+      - info
+    embed:
+      title: "Hello! :wave:"
+      description: "I am a discord bot that was made in YAML, possibly the first bot made in YAML if I'm being honest!"
+      color: 45311
+  - name: source
+    aliases:
+      - src
+    reply: https://github.com/CodeWithSwastik/yemil-bot
+  - name: ping
+    embed:
+      title: "Pong! :ping_pong:"
+      description: "`Bot Latency is 93ms`"
+      color: 15158332
