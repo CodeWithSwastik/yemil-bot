@@ -2,6 +2,8 @@
 
 A discord bot made in YAML
 
+## Running
+
 In order to run this bot you need a python library called discord-lib.
 
 Make sure you have python installed and install discord-lib
