@@ -31,5 +31,5 @@ commands:
   - name: ping
     embed:
       title: "Pong! :ping_pong:"
-      description: "`Bot Latency is 93ms`"
+      description: "`Bot Latency is <<{{bot.latency}}*1000>>ms`"
       color: 15158332
