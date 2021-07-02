@@ -1,0 +1,15 @@
+config:
+  token: "{{env.token}}"
+  prefixes:
+    - "{{when_mentioned}}"
+    - "y!"
+
+events:
+  - name: "on_ready"
+    action:
+      type: "log"
+      value: "Bot is ready"
+
+commands:
+  - name: "hi"
+    reply: "Hi!!"
