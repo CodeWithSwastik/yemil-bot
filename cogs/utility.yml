@@ -19,7 +19,3 @@ commands:
           value: "{{guild.id}}"
       image:
         url: "https://cdn.discordapp.com/icons/{{guild.id}}/{{guild.banner}}.png"
-  - name: whoami
-    embed:
-      title: "You are {{author.name}}, you didn't know this?"
-      color: 15277667

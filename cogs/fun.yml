@@ -24,6 +24,33 @@ commands:
       - howsus
       - susometer
     args:
+      - "*target"
+    action:
+      type: multi
+      value:
+        - type: store
+          name: res
+          data:
+            type: random
+            range: [0, 100]
+        - type: store
+          name: image
+          data:
+            type: random
+            choice:
+              - https://media.discordapp.net/attachments/743817386792058971/860864431877914624/unknown.png
+              - https://media.discordapp.net/attachments/743817386792058971/860864998003572756/unknown.png
+    embed:
+      title: "Sus-o-meter :thermometer:"
+      description: "{{target}} is `{{res}}%` sus"
+      color: 15277667
+      thumbnail:
+        url: "{{image}}"
+  - name: thicc
+    aliases:
+      - howthicc
+      - thiccometer
+    args:
       - target
     action:
       type: store
@@ -32,8 +59,54 @@ commands:
         type: random
         range: [0, 100]
     embed:
-      title: "Sus-o-meter :thermometer:"
-      description: "{{target}} is `{{res}}%` sus"
+      title: "Thicc-o-meter :thermometer:"
+      description: "{{target}} is `{{res}}%` thicc"
+      color: 5277667
+  - name: whoami
+    action:
+      type: multi
+      value:
+        - type: store
+          name: trait
+          data:
+            type: random
+            choice:
+              [
+                "a charming",
+                "a generous",
+                "a powerful",
+                "an admirable",
+                "an affectionate",
+                "a creative",
+                "a bright",
+                "a determined",
+                "a energetic",
+                "a helpful",
+                "a sincere",
+                "a diligent",
+                "a confident",
+              ]
+        - type: store
+          name: star
+          data:
+            type: random
+            choice:
+              [
+                "Capricorn",
+                "Sagittarius",
+                "Scorpio",
+                "Libra",
+                "Virgo",
+                "Leo",
+                "Cancer",
+                "Gemini",
+                "Taurus",
+                "Aries",
+                "Pisces",
+                "Aquarius",
+                "Capricorn",
+              ]
+    embed:
+      title: "You are {{author.name}}, you didn't know this?"
+      description: "Well since you are here anyway let me tell you about yourself. Your star sign is {{star}}. You are {{trait}} young man/woman."
       color: 15277667
-      image:
-        url: https://tenor.com/MLdp.gif
