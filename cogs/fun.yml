@@ -9,3 +9,31 @@ commands:
     reply: https://tenor.com/bnrL5.gif
   - name: insult
     reply: https://tenor.com/bkNfC.gif
+  - name: hello
+    action:
+      type: store
+      name: res
+      data:
+        type: random
+        choice:
+          - https://tenor.com/FM7z.gif
+          - https://tenor.com/bftQl.gif
+    reply: "{{res}}"
+  - name: sus
+    aliases:
+      - howsus
+      - susometer
+    args:
+      - target
+    action:
+      type: store
+      name: res
+      data:
+        type: random
+        range: [0, 100]
+    embed:
+      title: "Sus-o-meter :thermometer:"
+      description: "{{target}} is `{{res}}%` sus"
+      color: 15277667
+      image:
+        url: https://tenor.com/MLdp.gif
