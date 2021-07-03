@@ -9,6 +9,7 @@ config:
   allowedMentions:
     - "users"
     - "replied_user"
+  cogs: "./cogs"
 
 events:
   - name: on_ready
@@ -33,3 +34,5 @@ commands:
       title: "Pong! :ping_pong:"
       description: "`Bot Latency is <<({{bot.latency}}*1000) // 1>>ms`"
       color: 15158332
+  - name: yessir
+    reply: https://tenor.com/bDQYI.gif

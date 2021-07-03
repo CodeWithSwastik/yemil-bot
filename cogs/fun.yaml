@@ -1,0 +1,6 @@
+config:
+  type: cog
+
+commands:
+  - name: yessir
+    reply: https://tenor.com/bDQYI.gif
