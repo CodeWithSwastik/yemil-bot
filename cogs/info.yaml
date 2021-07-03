@@ -14,3 +14,9 @@ commands:
       title: "Invite me! <:thanks:759333378435579914>"
       description: "[Click here](https://discord.com/api/oauth2/authorize?client_id=851094611376210000&permissions=379968&scope=bot) to invite me!"
       color: 15277667
+  - name: about
+    embed:
+      title: "About Yemil"
+      description: "Yemil is the first Discord bot created by YAML, using discord-lib package. This bot is created by Swas.py, or Code with Swastik and FalseDev."
+      color: 770011
+ 
