@@ -17,6 +17,5 @@ commands:
   - name: about
     embed:
       title: "About Yemil"
-      description: "Yemil is the first Discord bot created by YAML, using discord-lib package. This bot is created by Swas.py, or Code with Swastik and FalseDev."
+      description: "Yemil is the first Discord bot created in YAML, along with discord-lib. This bot is created by Swas.py, aka Code with Swastik."
       color: 770011
- 
