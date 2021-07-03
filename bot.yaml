@@ -22,17 +22,11 @@ commands:
     aliases:
       - info
     embed:
-      title: "Hello! :wave:"
+      title: "Hello {{author.name}}! :wave:"
       description: "I am a discord bot that was made in YAML, possibly the first bot made in YAML if I'm being honest!"
       color: 45311
-  - name: source
-    aliases:
-      - src
-    reply: https://github.com/CodeWithSwastik/yemil-bot
   - name: ping
     embed:
       title: "Pong! :ping_pong:"
       description: "`Bot Latency is <<({{bot.latency}}*1000) // 1>>ms`"
       color: 15158332
-  - name: yessir
-    reply: https://tenor.com/bDQYI.gif

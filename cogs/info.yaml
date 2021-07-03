@@ -1,0 +1,16 @@
+config:
+  type: cog
+  name: Info
+
+commands:
+  - name: source
+    aliases:
+      - src
+    reply: https://github.com/CodeWithSwastik/yemil-bot
+  - name: invite
+    aliases:
+      - inv
+    embed:
+      title: "Invite me! <:thanks:759333378435579914>"
+      description: "[Click here](https://discord.com/api/oauth2/authorize?client_id=851094611376210000&permissions=379968&scope=bot) to invite me!"
+      color: 15277667
