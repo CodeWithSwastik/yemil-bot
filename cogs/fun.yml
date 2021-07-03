@@ -5,3 +5,7 @@ config:
 commands:
   - name: yessir
     reply: https://tenor.com/bDQYI.gif
+  - name: slap
+    reply: https://tenor.com/bnrL5.gif
+  - name: insult
+    reply: https://tenor.com/bkNfC.gif

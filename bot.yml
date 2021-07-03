@@ -10,6 +10,7 @@ config:
     - "users"
     - "replied_user"
   cogs: "./cogs"
+  intents: all
 
 events:
   - name: on_ready
